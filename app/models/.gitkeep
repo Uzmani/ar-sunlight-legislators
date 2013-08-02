@@ -1,0 +1,12 @@
+Option 1: 
+Senator.where(state: "CA")
+Senator.where(party: "R")
+sleezy = Senator.find(1)
+sleezy.name
+
+Option2:
+Congressman.where(state: "CA", title: "Senator")
+Congressman.where(title: Senator, party: "R")
+sleezy = Congressman.find(1)
+sleezy.name 
+
